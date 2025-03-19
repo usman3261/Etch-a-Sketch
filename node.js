@@ -36,8 +36,12 @@ createboard(16);
 
 function boardsize(input){
     if(input>2 && input<=100)
+    {
+        document.querySelector(".error").style.display="none";
         createboard(input);
+    }
     else
+    document.querySelector(".error").style.display="flex";
         console.log("Choose between 2 and 100")
 }
 
